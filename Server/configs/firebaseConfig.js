@@ -2,14 +2,15 @@
 const firebase = require('firebase/app');
 require('firebase/auth');
 require('firebase/database');
+require('dotenv').config();
 const firebaseConfig = {
-    apiKey: "AIzaSyDNN9-luzGcXErX-Ndn5AnsOERNtYP5h2c",
-    authDomain: "ping-c18f7.firebaseapp.com",
-    projectId: "ping-c18f7",
-    storageBucket: "ping-c18f7.appspot.com",
-    messagingSenderId: "920758536251",
-    appId: "1:920758536251:web:ce9e8bf604766a4811741e",
-    measurementId: "G-XGQN6QEPCP"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID,
+    measurementId: process.env.MEASUREMENT_ID
 };
 
 // Initialize Firebase
