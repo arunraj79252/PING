@@ -1,0 +1,4 @@
+/.env
+/node_modules
+/log_files
+/configs/firebaseServiceAccount
